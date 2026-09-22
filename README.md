@@ -38,7 +38,7 @@ model_run(get_default_input())
 #> $sample_size
 #> [1] 20975
 #> $events
-#> [1] 378
+#> [1] 377.55
 #> $criteria
 #>                 criterion Samp_size Perf    SE CI_width
 #> 1        Criteria 1 - O/E     20975  1.0 0.051      0.2
