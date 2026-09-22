@@ -1,0 +1,32 @@
+Package: pmvalsampsizepexa
+Title: Sample Size for Prediction Model Validation - ModelsCloud Wrapper
+Version: 0.1.0
+Authors@R: c(
+    person("Ramin", "Rezaeianzadeh", email = "raminrzn@student.ubc.ca",
+           role = c("aut", "cre")),
+    person("Joie", "Ensor", role = "ctb",
+           comment = "Author of the pmvalsampsize package this wrapper calls"),
+    person("Richard D.", "Riley", role = "ctb",
+           comment = "Author of the validation sample size criteria"))
+Description: A ModelsCloud wrapper for the 'pmvalsampsize' package, which
+    computes the minimum sample size required to externally validate an
+    existing multivariable clinical prediction model using the criteria of
+    Riley et al. (2021) <doi:10.1002/sim.9025> and Archer et al. (2020)
+    <doi:10.1002/sim.8766>. Supports continuous, binary and survival outcomes.
+    The methodology and its implementation live in 'pmvalsampsize'; this
+    package only adapts the calling convention to ModelsCloud (model_run(),
+    get_sample_input(), get_default_input()) and adds the gateway entry point
+    the platform dispatches to.
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    pmvalsampsize,
+    jsonlite,
+    utils
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/raminrzn/pmvalsampsizepexa
+BugReports: https://github.com/raminrzn/pmvalsampsizepexa/issues
